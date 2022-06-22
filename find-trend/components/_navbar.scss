@@ -1,0 +1,63 @@
+.navbar {
+    // background-color: black !important;
+    height: 100px;
+
+    .navbar-link {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        text-align: center;
+
+        color: #FFFFFF !important;
+
+        font-family: 'Poppins';
+
+    }
+}
+
+.navbar- {
+    &brand {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    &collapse {
+        background-color: #000 !important;
+        // margin-left: -13px !important;
+        width: 130vw !important;
+        z-index: 3;
+        position: relative;
+    }
+
+}
+
+.btn-auth {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    /* identical to box height, or 18px */
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+
+    &:first-child {
+        color: #FFFFFF;
+
+    }
+
+    &:last-child {
+        width: 129px;
+        height: 42px;
+
+        background: #FFFFFF;
+        border-radius: 40px;
+
+        margin-left: 30px;
+
+        @include flex-cc;
+    }
+}

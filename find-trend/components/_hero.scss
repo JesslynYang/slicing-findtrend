@@ -1,0 +1,119 @@
+.hero {
+    background-image: url(../../assets/img/home/hero.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 30px 0;
+
+    @include lg {
+        padding: 120px 0;
+    }
+}
+
+.hero- {
+    &title {
+        @include font-1;
+        font-weight: 900;
+        text-align: center;
+        color: #FFFFFF;
+        line-height: 112%;
+        font-size: 24px;
+
+        @include sm {
+            font-size: 40px;
+        }
+
+        @include md {
+            font-size: 56px;
+        }
+
+        @include lg {
+            font-size: 72px;
+        }
+    }
+
+    &desc {
+        @include font-2;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        text-align: center;
+
+        color: #8B8B8B;
+
+        margin: 30px 0;
+
+        @include sm {
+            font-size: 14px;
+            margin: 37px 0;
+        }
+
+        @include md {
+            font-size: 16px;
+            margin: 44px 0;
+        }
+
+        @include lg {
+            font-size: 18px;
+            margin: 60px 0;
+        }
+        
+
+    }
+}
+
+.btn-hero {
+    @include button;
+    @include flex-cc;
+    @include font-2;
+
+    padding: 9px 14px;
+
+    background: #A8FF35;
+    border-radius: 40px;
+
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+    /* or 25px */
+    text-align: center;
+
+    color: #000000;
+
+    @include sm {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    @include md {
+        padding: 12px 26px;
+        font-size: 17px;
+    }
+    @include lg {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../../assets/img/home/o-hero.svg);
+        bottom: 0;
+        transform: scale(.5);
+        right: -90px;
+
+        @include sm {
+            transform: scale(.7);
+            right: -100px;
+        }
+        @include md {
+            transform: scale(.7);
+            right: -110px;
+        }
+        @include lg {
+            transform: scale(1);
+            right: -120px;
+        }
+    }
+}

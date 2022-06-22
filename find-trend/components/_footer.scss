@@ -1,0 +1,78 @@
+footer {
+    padding: 60px 0;
+
+    @include md {
+        padding: 25px 0;
+
+    }
+
+    
+}
+
+.footer- {
+    &logo {
+        @include font-1;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        /* identical to box height, or 24px */
+        text-align: center;
+
+        color: #000000;
+
+        // margin-right: 50px !important;
+    }
+
+    &link {
+        @include font-2;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 100%;
+        /* identical to box height, or 18px */
+        text-align: center;
+
+        color: #000000;
+        margin-left: 24px;
+        text-decoration: none;
+
+        margin: 10px 14px;
+
+        @include md {
+            font-size: 14px;
+            margin: 10px 6px;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &logo-column {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+        
+        @include md {
+            margin-bottom: 0px;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include md {
+            @include flex-cc;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+        }
+
+
+    }
+
+}

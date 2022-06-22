@@ -1,0 +1,48 @@
+.email {
+    background: #A8FF35;
+    padding: 60px 0;
+
+    @include sm {
+        padding: 90px 0;
+    }
+    
+    @include md {
+        padding: 120px 0;
+    }
+
+    @include lg {
+        padding: 150px 0;
+    }
+}
+
+.email- {
+    &title {
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 112%;
+        /* identical to box height, or 81px */
+        text-align: center;
+
+        color: #000000;
+
+        @include sm {
+            font-size: 48px;
+        }
+
+        @include md {
+            font-size: 56px;
+        }
+
+        @include lg {
+            font-size: 64px;
+        }
+
+        &:last-child {
+            opacity: .4;
+        }
+    }
+}
+
+.btn-email {
+    @include btn-dark;
+}

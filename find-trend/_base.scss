@@ -1,0 +1,65 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;500;600;700&display=swap');
+
+a:hover {
+    color: white;
+}
+
+@mixin flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font-1 {
+    font-family: 'Inter';
+}
+
+@mixin font-2 {
+    font-family: 'Poppins';
+}
+
+@mixin button {
+    outline: none;
+    border: none;
+}
+
+@mixin btn-dark {
+    @include font-1;
+    @include button;
+
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    text-align: center;
+
+    color: #FFFFFF;
+
+    padding: 9px 14px;
+
+    background: #000000;
+    border-radius: 40px;
+
+    
+    text-decoration: none;
+    color: white;
+
+    @include sm {
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    @include md {
+        padding: 12px 26px;
+        font-size: 17px;
+    }
+    @include lg {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+
+    :hover {
+        text-decoration: none;
+        color: white !important;
+    }
+}

@@ -1,0 +1,91 @@
+.new {
+    background: #A8FF35;
+    padding: 50px 0;
+    
+    @include lg {
+        padding: 150px 0;
+    }
+}
+
+.new- {
+    &title {
+        @include font-1;
+        font-size: 34px;
+        line-height: 36px;
+        font-weight: 700;
+        text-align: center;
+
+        color: #000000;
+
+        @include sm {
+            font-size: 48px;
+            line-height: 52px;
+        }
+
+        @include md {
+            font-size: 64px;
+            line-height: 72px;
+        }
+
+        @include lg {
+            font-size: 72px;
+            line-height: 86px;
+        }
+
+    }
+
+    &desc {
+        @include font-2;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 150%;
+        /* or 27px */
+        text-align: center;
+
+        color: #000000;
+
+        @include sm {
+            font-size: 14px;
+        }
+
+        @include md {
+            font-size: 16px;
+        }
+
+        @include lg {
+            font-size: 18px;
+        }
+
+    }
+
+    &image {
+        position: relative;
+        width: 65%;
+        margin: 0 auto;
+
+        &::before, &::after {
+            content: "";
+            top: 50%;
+            position: absolute;
+        }
+
+        &::before {
+            content: url(../../assets/img/home/o-new.svg);
+            left: -75px;
+
+            @include md {
+                left: -125px;
+            }
+        }
+        
+        &::after {
+            content: url(../../assets/img/home/o-new-2.svg);
+            right: -75px;
+            top: 30%;
+
+            @include md {
+                right: -125px;
+            }
+        }
+    }
+}
